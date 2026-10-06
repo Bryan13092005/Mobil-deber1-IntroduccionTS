@@ -1,3 +1,3 @@
 # Instrucciones
 Ejecuta el comando
-nmp run dev
+npm run dev
