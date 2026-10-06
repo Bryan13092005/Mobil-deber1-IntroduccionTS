@@ -113,14 +113,14 @@ export const Modulo2Page=({inicial=0,step=1}:ContadorProps) =>{
     const bryanObject:Persona={nombre:'Bryan',edad:20,state:false}
 
   return (
-    <div className="h-screen bg-amber-300 text-black felx flex-col p-4 gap-4">
+    <div className="min-h-screen bg-amber-300 text-black flex flex-col items-center gap-5 p-6">
         <span>HACER CAFE CON TYPE</span>
-    <button className="bg-amber-950 text-white rounded-2xl" onClick={onCafe}>PREPARAR</button>
+    <button className="bg-amber-950 text-white rounded-2xl px-4 py-2" onClick={onCafe}>PREPARAR</button>
     <span>HACER CAFE Interface</span>
-    <button className="bg-black text-white rounded-2xl" onClick={onCafeI}>PREPARAR Con interfaz</button>
+    <button className="bg-black text-white rounded-2xl px-4 py-2" onClick={onCafeI}>PREPARAR Con interfaz</button>
     <span>state tipados</span>
     {intensidadUI}
-    <button onClick={()=>setintensidadUI('fuerte')}>cambiar state</button>
+    <button className="rounded-md px-3 py-1" onClick={()=>setintensidadUI('fuerte')}>cambiar state</button>
 
     <span>Contador</span>
     <button onClick={dec} className="rounded-md border border-neutral-700 bg-neutral-800 px-3 py-1 hover:bg-neutral-700 text-amber-50">-</button>
